@@ -1,0 +1,72 @@
+@import "_variables.scss";
+.section-health {
+    background-position: center center;
+    background-image: url(./../assets/img/health-banner.jpg); 
+    min-height: 1000px;
+    background-color: white
+}
+
+.table-outer {
+    width: 1400px;
+    padding: 0 17px;
+    float: left;
+    padding-top: 795px;
+    .first-tr td{
+        padding-top: 45px
+    } 
+    tr td:first-child{
+        padding-left: 30px
+    }
+    tr {
+        th:first-child {
+            padding-left: 20px;
+        }
+        th:last-child{
+            text-align: right;
+            padding-right: 30px
+        }
+    }
+    tr {
+        td:last-child {
+            text-align: right;
+            padding-right: 60px
+        }
+    }
+    tr:last-child td {
+        padding-bottom: 35px;
+    }
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: rgba(225,222,224,0.5);
+}
+td {
+    font-weight: 400;
+    font-size: 14px;
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+tr td:first-child {
+    text-decoration: underline
+}
+th {
+    padding: 19px 12px 17px;
+    font-size: 16px;
+    font-weight: 900;
+    background-color: #e1dee0;
+    border-bottom: 3px solid #b6c4c8;
+    color: #364143;
+    text-transform: uppercase
+}
+
+
+
+@media only screen and (max-width: 1450px) {
+    .table-outer {
+        width: 100%
+    }
+}
+

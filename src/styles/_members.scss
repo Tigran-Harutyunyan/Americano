@@ -1,0 +1,96 @@
+.section-members {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(./../assets/img/members.jpg);
+    min-height: 1000px;
+    background-color: white
+}
+
+.members-inner {
+    padding-top: 800px;
+    margin: 0 auto;
+    width: 1366px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+
+.accordion {
+    background-color: #e1dee0;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: $color2;
+    cursor: pointer;
+    padding: 16px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-bottom: 3px;
+    transition: none
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.accordion.active:after {
+    content: "\2212";
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.active,
+.accordion:hover {
+    background-color: #f0eeef;
+}
+
+.accordion.active {
+    margin-bottom: 0;
+    text-transform: initial;
+    font-size: 14px;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+
+.panel {
+    padding: 0 18px;
+    background-color: #f0eeef;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-bottom: 4px;
+    p {
+        text-align: left;
+        color: black;
+        font-size: 14px;
+        font-weight: 400;
+        padding-bottom: 18px;
+    }
+}
+
+.panel-title {
+    font-weight: 900;
+    text-align: left;
+    font-size: 14px;
+}
+
+.panel-outer {
+    float: left;
+    margin: 0 auto;
+    width: 100%;
+}
+.panel-inner-block {
+    border-left: 2px solid #b5b7b9;
+    padding-left: 34px;
+}
+.panel-spacer {
+    height: 40px;
+}
+p.no-margin-p {
+    padding-bottom: 0
+}

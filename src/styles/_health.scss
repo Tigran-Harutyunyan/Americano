@@ -1,6 +1,7 @@
 @import "_variables.scss";
 .section-health {
     background-position: center center;
+    background-repeat: no-repeat;
     background-image: url(./../assets/img/health-banner.jpg); 
     min-height: 1000px;
     background-color: white
@@ -10,7 +11,7 @@
     width: 1400px;
     padding: 0 17px;
     margin: 0 auto;
-    padding-top: 795px;
+    padding-top: 990px;
     .first-tr td{
         padding-top: 45px
     } 

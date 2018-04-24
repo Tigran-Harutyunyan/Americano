@@ -18,21 +18,22 @@
     background-color: #e1dee0;
     text-transform: uppercase;
     font-weight: 900;
-    color: $color2;
+    color: #364143;
     cursor: pointer;
-    padding: 16px;
+    padding: 18px 30px 16px;
     width: 100%;
     text-align: left;
     border: none;
     outline: none;
     transition: 0.4s;
     margin-bottom: 3px;
-    transition: none
+    transition: none;
+    font-size: 16px;
 }
 
 .accordion:after {
     content: '\002B';
-    color: #777;
+    color: #364143;
     font-weight: bold;
     float: right;
     margin-left: 5px;
@@ -58,7 +59,7 @@
 /* Style the accordion panel. Note: hidden by default */
 
 .panel {
-    padding: 0 18px;
+    padding: 0 63px;
     background-color: #f0eeef;
     max-height: 0;
     overflow: hidden;
@@ -70,6 +71,23 @@
         font-size: 14px;
         font-weight: 400;
         padding-bottom: 18px;
+    }
+    .list-title {
+        text-align: left;
+        font-size: 14px;
+        color: $color2;
+        padding-bottom: 30px;
+    }
+    ul {
+        list-style-type: unset;
+        color: $color2;
+        margin-left: 15px;
+        margin-bottom: 26px;
+        li {
+            font-size: 14px;
+            padding-bottom: 10px;
+            font-weight: 400;
+        }
     }
 }
 
@@ -84,13 +102,17 @@
     margin: 0 auto;
     width: 100%;
 }
+
 .panel-inner-block {
     border-left: 2px solid #b5b7b9;
     padding-left: 34px;
+    margin-top: 28px;
 }
+
 .panel-spacer {
     height: 40px;
 }
+
 p.no-margin-p {
     padding-bottom: 0
 }

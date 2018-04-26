@@ -142,6 +142,11 @@ $color-active: #fff;
 
 #toggleMobileMEnu {
     display: none;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    height: 16px;
+    z-index: 100;
 }
 
 .active-menu {
@@ -281,8 +286,17 @@ $color-active: #fff;
         }
     }
 }
-
-//////////////////////////////
+ 
+.hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    background-image: url(./../assets/img/burger-item.png);
+    width: 30px;
+}
 @keyframes fadeInRight {
     0% {
         opacity: 0;
@@ -299,15 +313,22 @@ $color-active: #fff;
     }
 }
 @media only screen and (max-width: 1070px) {
+    .nav.sidemenu{
+        display: none
+    }
+    #toggleMobileMEnu {
+        display: block;
+    }
+    .nav-bar {
+        height: 0;
+    }
     .scrolled-header {
         .callButton,
         .reservation-btn {
             display: none
         }
     }
-}
-
- 
+} 
 @media only screen and (max-width: 780px) {
     .banner-inner-element.container {
         margin-top: 138px;

@@ -29,22 +29,22 @@
             <img src="../src/assets/img/logo.png" class="logo">
             <ul class="nav sidemenu">
                 <li>
-                    <a class="menu-item">Home</a>
+                    <a class="menu-item" href="javascript:void(0)">Home</a>
                 </li>
                 <li>
-                    <a class="menu-item" href="download.html">About us</a>
+                    <a class="menu-item" href="javascript:void(0)">About us</a>
                 </li>
                 <li>
-                    <a class="menu-item" href="staffers.html">CAREERS</a>
+                    <a class="menu-item" href="javascript:void(0)">CAREERS</a>
                 </li>
                 <li>
-                    <a class="menu-item" href="nurses.html">CONTACT US</a>
+                    <a class="menu-item active-link" href="javascript:void(0)">CONTACT US</a>
                 </li>
                 <li>
-                    <a class="menu-item" href="about.html">MEMBERS & GUESTS</a>
+                    <a class="menu-item" href="javascript:void(0)">MEMBERS & GUESTS</a>
                 </li>
                 <li>
-                    <a class="menu-item active-link" href="healthplans.html">Health plans</a>
+                    <a class="menu-item" href="javascript:void(0)">Health plans</a>
                 </li>
             </ul>
         </nav>
@@ -59,100 +59,72 @@
             <nav class="overlay-menu">
                 <ul>
                     <li>
-                        <a class="menu-item active-link" href="/">Home</a>
+                        <a class="menu-item" href="/">Home</a>
                     </li>
                     <li>
-                        <a class="menu-item" href="download.html">Download</a>
+                        <a class="menu-item" href="javascript:void(0)">About us</a>
                     </li>
                     <li>
-                        <a class="menu-item" href="staffers.html">For staffers</a>
+                        <a class="menu-item" href="javascript:void(0)">CAREERS</a>
                     </li>
                     <li>
-                        <a class="menu-item" href="nurses.html">For nurses</a>
+                        <a class="menu-item" href="javascript:void(0)">CONTACT US</a>
                     </li>
                     <li>
-                        <a class="menu-item" href="about.html">About</a>
+                        <a class="menu-item" href="javascript:void(0)">MEMBERS & GUESTS</a>
+                    </li>
+                    <li>
+                        <a class="menu-item" href="javascript:void(0)">Health plans</a>
                     </li>
                 </ul>
             </nav>
         </div>
         <!--MOBILE DROPDOWN-->
     </header>
-    <section class="section-members">
-        <div class="panel-outer">
-            <div class="members-inner">
-                <div class="accordion">Find a provider</div>
-                <div class="panel">
-                    <div class="panel-inner-block">
-                        <p>Lorem ipsum...</p>
-                    </div>
+    <section class="contacts-members">
+
+        <div class="contacts-block">
+            <h4 class="contact-title-big">CONTACT US</h4>
+            <div class="contacts-block-inner">
+                <div class="contact-us-form">
+                    <h5 class="title-bold title-bold-big">Thank you for visiting our website. There are many different ways to contact us.</h5>
                 </div>
-                <div class="accordion">Find a doctor</div>
-                <div class="panel">
-                    <div class="panel-inner-block">
+                <div class="contacts-two-col">
+                    <div class="contacts-left">
+                        <h3 class="title-bold">MEMBER AND PROSPECTIVE MEMBER INQUIRIES</h3>
                         <p>
-                            You can search for a primary care (PCP) or a specialty physician by location, specialty or language. Or if you prefer, you
-                            can call Prospect Medical at 800-708-3230 for a referral to a physician that best suits your
-                            needs.
+                            If you are a Prospect member or would like to become one, please call our Customer Services Department at 800-708-3230. We
+                            have representatives available weekdays between the hours of 8 a.m. and 5 p.m. Pacific Time.
+                            Bilingual representatives are available to assist you. You can also email us at memberservices@prospectmedical.com.
                         </p>
                         <p>
-                            Your PCP is your main doctor who will see you for check-ups and routine care. The PCP works with you and your health network
-                            or medical group as part of your team to help coordinate your healthcare services. These services
-                            may include:
-                        </p>
-
-                        <h5 class="list-title">Prospect provides you with:</h5>
-                        <ul>
-                            <li>Specialist referrals</li>
-                            <li>Lab tests</li>
-                            <li>Outpatient referrals or services</li>
-                            <li>Medical supply requests</li>
-                            <li>Other healthcare services necessary for your care</li>
-                        </ul>
-
-                        <p>
-                            If an authorization is needed for a referral or request, it will be sent by your physician to Prospect’s Utilization Management
-                            Department for approval. Most requests are received back within five business days and many can
-                            be approved the same day.
-
+                            For individuals who are Medicare eligible, we also have our Seniors VIP Line at 877-619-5900, where bilingual representatives
+                            are available to assist you. Or, you can email us at seniorsvip@prospectmedical.com
                         </p>
                         <p>
-                            Once you select a PCP, you should call the office to make an appointment. The initial visit should help you get to know the
-                            doctor, and your doctor to know you.
-
-                        </p>
-                        <p>
-                            If at any time you want to change PCPs, or would like guidance selecting a new PCP, you can do so by calling your health
-                            plan or our Customer Service Team at 800-708-3230, 8 a.m. to 5 p.m. Pacific Time, Monday through
-                            Friday. You can also use this search tool.
-
-                        </p>
-                        <p class="no-margin-p">
-                            To search for provider clinical performance data, please follow this link to Medicare.gov. 
+                            Members with hearing or speech impairments, please dial 711 for California Relay TTD/TTY assistance
                         </p>
                     </div>
-                    <div class="panel-spacer"></div>
+                    <div class="contacts-right">
+                        <div class="contact-form">
+                            <h5 class="sub-title">Contact us</h5>
+                            <form class="contact-form" id="form-contact-us" name="contact_form" id="form">
+                                <input id="contact_email" class="form-control" type="email" placeholder="Your email" name="contact_email">
+                                <textarea name="contact_message" placeholder="Your message" class="form-control" id="contact_message" cols="30" rows="10"></textarea>
+                                <input type="submit" class="btn-submit btn-link" id="contact-us-btn" value="Submit">
+                            </form>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="accordion">Find an urgent care</div>
-                <div class="panel">
-                    <p>Lorem ipsum...</p>
-                </div>
-
-                <div class="accordion">Member info</div>
-                <div class="panel">
-                    <p>Lorem ipsum...</p>
-                </div>
-
-                <div class="accordion">Just for seniors</div>
-                <div class="panel">
-                    <p>Lorem ipsum...</p>
-                </div>
+                <h4 class="title-bold title-2">PROVIDER INQUIRIES</h4>
+                <p>
+                    For provider inquiries (regarding eligibility, referrals or claims status), you can reach us at provider.services@prospectmedical.com,
+                    or 800-708-3230. Hours of operation are weekdays between the hours of 8 a.m. and 5 p.m. Pacific Time.
+                </p>
             </div>
         </div>
 
     </section>
-    <div class="pre-footer-spacer"></div>
     <footer>
         <div class="footer-inner">
             <div class="americano"></div>
